@@ -27,7 +27,7 @@ app = FastAPI(
 )
 
 class CertificateRequest(BaseModel):
-    tuteeId: str
+    tutee_id: str
 
 @app.post("/get-certificate/")
 def get_certificate(payload: CertificateRequest):
